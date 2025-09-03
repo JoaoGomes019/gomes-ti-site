@@ -1,0 +1,240 @@
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: 10px 40px;
+        position: relative;
+        background-color: rgb(223, 222, 222);
+        height: 50px;
+    }
+
+    .logo img {
+        width: 250px;
+        height: auto;
+    }
+
+    nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+    }
+
+    nav ul li a:hover {
+        color: #007a33;
+    }
+
+    .conheca_empresa {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 50vh;
+        color: white;
+        padding: 0 20px;
+        overflow: hidden;
+    }
+
+    .conheca_empresa::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../images/palestra_ti.jpg') center center/cover no-repeat;
+        filter: blur(5px);
+        z-index: -2;
+        transform: scale(1.05);
+    }
+
+    .conheca_empresa::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.4);
+        z-index: -1;
+    }
+
+    .conheca_empresa h1 {
+        font-size: 60px;
+        margin: 0;
+    }
+
+    .conheca_empresa h2 {
+        font-size: 28px;
+        margin: 10px 0 20px 0;
+    }
+
+    .conheca_empresa p {
+        font-size: 18px;
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+
+    .conheca_empresa button {
+        background-color: #28a745; 
+        color: white;
+        border: none;
+        padding: 15px 35px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 30px; 
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .conheca_empresa button:hover {
+        background-color: #218838; 
+        transform: scale(1.05); 
+    }
+
+    /* Seção de Soluções */
+    .solucoes {
+        padding: 20px 20px;
+        text-align: center;
+        background-color: #bebebe50;
+    }
+
+    .solucoes h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .solucoes p {
+        font-size: 18px;
+        max-width: 800px;
+        margin: 0 auto 40px auto;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        text-align: left;
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    /* Seção de Contato */
+    .contato {
+        padding: 60px 20px;
+        text-align: center;
+        background-color: #f8f8f8;
+    }
+
+    .contato h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .contato p {
+        font-size: 18px;
+        max-width: 800px;
+        margin: 0 auto 20px auto;
+    }
+
+    .contato .subtitulo {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 40px;
+    }
+
+    .contato form {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input-row {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .input-row input {
+        flex: 1;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        resize: vertical;
+    }
+
+    .contato button {
+        background-color: #28a745;
+        color: #ffffff;
+        border: none;
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .contato button:hover {
+        background-color: #40b87c;
+        transform: scale(1.05);
+    }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="css/style_home.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img id="logo" src="images/logo_gomesTI.png" alt="Gomes_TI">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Página inicial</a></li>
+            <li><a href="#">Soluções</a></li>
+            <li><a href="#">Tecnologias</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="conheca_empresa">
+    <h1>GOMES TI</h1>
+    <h2>Empresa de inovação em Tecnologias</h2>
+    <p>Impulsione resultados e otimize processos. Garanta competitividade e fortalecimento no mercado por meio da tecnologia.</p>
+    <button>Conheça</button>
+</div>
+
+<div class="solucoes">
+    <h2>Leve seu negócio ao máximo de eficiência</h2>
+    <p>Transformamos desafios em soluções tecnológicas que geram resultados reais.</p>
+
+    <div class="cards">
+        <div class="card">
+            <img src="images/wifi_icon.png" alt="Wi-Fi">
+            <h3>Tecnologia de Excelência</h3>
+            <p>Wi-Fi potente em todos os setores da sua empresa — sem pontos fracos, sem preocupações.</p>
+        </div>
+        <div class="card">
+            <img src="images/security_icon.png" alt="Segurança">
+            <h3>Dados totalmente protegidos</h3>
+            <p>Evite perdas e garanta que suas informações mais importantes estejam sempre seguras.</p>
+        </div>
+        <div class="card">
+            <img src="images/process_icon.png" alt="Processos">
+            <h3>Processos mais rentáveis</h3>
+            <p>Tecnologia moderna que reduz custos e aumenta a eficiência do seu negócio.</p>
+        </div>
+        <div class="card">
+            <img src="images/equipment_icon.png" alt="Equipamentos">
+            <h3>Equipamentos ideais para sua empresa</h3>
+            <p>Garantimos soluções eficientes que proporcionam resultados consistentes e confiáveis.</p>
+        </div>
+        <div class="card">
+            <img src="images/support_icon.png" alt="Suporte">
+            <h3>Atendimento ágil e eficaz</h3>
+            <p>Impulsione sua eficiência e veja seu negócio crescer com suporte de T.I. rápido e confiável.</p>
+        </div>
+        <div class="card">
+            <img src="images/performance_icon.png" alt="Performance">
+            <h3>Alta performance em tecnologia</h3>
+            <p>Mais agilidade, produtividade e otimização para todos os setores da sua empresa.</p>
+        </div>
+    </div>
+</div>
+
+<div class="contato">
+    <h2>Fale com a Gomes TI</h2>
+    <p>Seja atendido por um time de especialistas em tecnologia para impulsionar e proteger o seu negócio.</p>
+    <p class="subtitulo">Envie sua solicitação e, em breve, entraremos em contato.</p>
+
+    <form action="enviar.php" method="POST">
+        <div class="input-row">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="tel" name="telefone" placeholder="Telefone">
+        </div>
+        <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+        <button type="submit">SOLICITAR ATENDIMENTO</button>
+    </form>
+</div>
+</body>
+</html>
