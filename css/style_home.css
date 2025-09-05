@@ -3,44 +3,6 @@
         font-family: Arial, sans-serif;
     }
 
-    header {
-        display: flex;
-        align-items: center;
-        padding: 10px 40px;
-        position: relative;
-        background-color: rgb(223, 222, 222);
-        height: 50px;
-    }
-
-    .logo img {
-        width: 250px;
-        height: auto;
-    }
-
-    nav {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        gap: 50px;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-    }
-
-    nav ul li a:hover {
-        color: #007a33;
-    }
-
     .conheca_empresa {
         position: relative;
         display: flex;

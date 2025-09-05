@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    position: relative;
+    background-color: rgb(223, 222, 222);
+    height: 60px;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0725aa;
+}
