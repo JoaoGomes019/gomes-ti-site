@@ -41,3 +41,44 @@ nav ul li a {
 nav ul li a:hover {
     color: #0725aa;
 }
+
+/* Estilo do dropdown */
+nav ul li {
+  position: relative; /* Necessário para posicionar o submenu */
+}
+
+nav ul li .dropdown-menu {
+  display: none; /* Esconde o menu por padrão */
+  position: absolute;
+  top: 100%; /* Aparece logo abaixo do item */
+  left: 0;
+  background: white;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+nav ul li .dropdown-menu li {
+  padding: 8px 20px;
+}
+
+nav ul li .dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s;
+}
+
+nav ul li .dropdown-menu li a:hover {
+  background: #f0f0f0;
+  color: #007a33;
+}
+
+/* Mostrar o menu quando passa o mouse */
+nav ul li.dropdown:hover .dropdown-menu {
+  display: block;
+}
